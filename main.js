@@ -22,7 +22,7 @@ var recordCollection = {
   function updateRecords(records, id, prop, value) {
     if (prop != "tracks" && value != "" ){
        records[id][prop]= value;
-     } else if (prop =="tracks" && !(records[id].hasOwnProperty('tracks')))   {
+    } else if (prop =="tracks" && !(records[id].hasOwnProperty('tracks')))   {
       var tracks=[];
       records[id]["tracks"]= [value];
     }else if (prop=="tracks" && value != ""){
