@@ -1,4 +1,4 @@
-
+// Record Collection Challenge
 var recordCollection = {
     2548: {
       albumTitle: 'Slippery When Wet',
@@ -18,7 +18,6 @@ var recordCollection = {
       albumTitle: 'ABBA Gold'
     }
   };
-  
 
   function updateRecords(records, id, prop, value) {
     if (prop != "tracks" && value != "" ){
