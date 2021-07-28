@@ -1,0 +1,71 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/32/99/FTcskA.jpg);
+    background-size:cover;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-left: 50px;
+  }
+
+.container{
+    display:flex;
+    width:90vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:80vh;
+    border-radius: 50px;
+    flex:0.5;
+    position:relative;
+    transition: flex 0.5s ease-in;
+    color:#fff;
+    cursor:pointer;
+    margin:10px;
+}
+
+.panel h3{
+    position:absolute;
+    bottom:20px;
+    left:30%;
+    opacity:0;
+}
+
+.panel.active{
+flex: 5;
+}
+
+.panel.active h3{
+    opacity:1;
+     transition: opacity 0.5s ease-in 0.4s;
+     color: #FFFFFF;
+     text-shadow: #000000 2px 2px 2px;
+}
+
+@media(max-width:480px){
+    .container{
+        width:100vw;
+    }
+
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display:none;
+    }
+}
